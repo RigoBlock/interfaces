@@ -43,6 +43,8 @@ interface Casper {
 /*
 
 //the below is the Casper Interface contract
+//this is not necessary if one uses the interface
+//it helps people who are used to contracts to read
 
 contract CasperFace {
     
