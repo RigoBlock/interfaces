@@ -13,7 +13,7 @@ interface Casper {
     
     //NON-CONSTANT METHODS
     
-    function initiate(uint _epoch_length, uint _withdraw_delay, address _owner, address _sighasher, address _purity_checker, uint8 _base_interest_factor, uint8 _base_penalty_factor);
+    function initiate(uint _epoch_length, uint _withdrawal_delay, address _owner, address _sighasher, address _purity_checker, uint8 _base_interest_factor, uint8 _base_penalty_factor);
     function initiate_epoch(uint epoch);
     function deposit(address validation_addr, address withdrawal_addr) payable;   //would be nice to have: returns (bool success) {}
     function logout(bytes logout_msg);
@@ -27,7 +27,7 @@ interface Casper {
     
     //CONSTANT METHODS
 
-    //function balanceOf(address _who) constant returns (uint) {}   //would be nice to have balances by address in addition of balances by validator_index
+    //function balance_of(address validator) constant returns (uint) {}   //would be nice to have balances by address in addition of balances by validator_index
 
     function get_deposit_size(uint validator_index) constant returns (uint);
     function get_total_curdyn_deposits() constant returns (uint);
