@@ -67,7 +67,7 @@ contract CasperFace {
     
     //CONSTANT METHODS
 
-    //function balanceOf(address _who) constant returns (uint) {}   //would be nice to have balances by address in addition of balances by validator_index
+    //function balance_of(address _who) constant returns (uint) {}   //would be nice to have balances by address in addition of balances by validator_index
 
     function get_deposit_size(uint validator_index) constant returns (uint) {}
     function get_total_curdyn_deposits() constant returns (uint) {}
